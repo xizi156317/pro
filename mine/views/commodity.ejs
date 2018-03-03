@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/stylesheets/commodity.css">
+</head>
+<body>
+	<!--<h1><%= ttt %></h1>
+	用户名:<input type="text" id="username"/><br>
+	密码:<input type="password" id="psw"/><br>
+	<button type="button" onclick="loginFunc()">登录</button>-->
+	
+	<h1><%= ttt %></h1>
+	<!--header-->
+	<div class="header">
+		<div class="header1">
+			<div class="logo">
+				<img src="/images/topLogo.png"/>
+			</div>
+			<div class="header1_right">
+				<ul>
+					<li class="fir">
+						<a href="#">
+							<img src="/images/topmune_09.png"/>
+							<p>更多模板堂产品</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_01.png"/>
+							<p>开店向导</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_02.png"/>
+							<p>记事本</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_03.png"/>
+							<p>刷新</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_04.png"/>
+							<p>个人设置</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_05.png"/>
+							<p>管理员留言</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_06.png"/>
+							<p>查看网店</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_007.png"/>
+							<p>帮助</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_07.png"/>
+							<p>关于ECSHOP</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/qingchu.png"/>
+							<p>清除缓存</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/images/topmune_08.png"/>
+							<p>退出</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--nav-->
+	<div class="nav">
+		<div class="nav1">
+			<ul>
+				<li class="fir">
+					<a href="#">
+						<img src="/images/index-11_07.png"/>
+						<span>起始页</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/images/index-11_41.png"/>
+						<span>设置导航栏</span>
+					</a>
+				</li>
+				<li class="fir_li">
+					<a href="#">
+						<img src="/images/index-11_09.png"/>
+						<span>商品管理</span>
+						<span class="pattern pattern1">5</span>
+					</a>
+				</li>
+				<li class="sec_li">
+					<a href="#">
+						<img src="/images/dd.png"/>
+						<span>订单管理</span>
+						<span class="pattern pattern2">0</span>
+					</a>
+				</li>
+				<li class="thr_li">
+					<a href="#">
+						<img src="/images/index-11_13.png"/>
+						<span>广告管理</span>
+						<span class="pattern pattern3">0</span>
+					</a>
+				</li>
+				<li class="fou_li">
+					<a href="#">
+						<img src="/images/index-11_19.png"/>
+						<span>用户评论</span>
+						<span class="pattern pattern4">0</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="ys ys1">用户评论</a>
+				</li>
+				<li>
+					<a href="#" class="ys">商品列表</a>
+				</li>
+				<li>
+					<a href="#" class="ys">订单列表</a>
+				</li>
+				<li>
+					<a href="#" class="ys">会员列表</a>
+				</li>
+				<li>
+					<a href="#" class="ys">商店设置</a>
+				</li>
+				<li>
+					<a href="#" class="ys">移动版</a>
+				</li>
+				<li>
+					<a href="#" class="ys">服务市场</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--main-->
+	<div clas="main">
+		<div class="main1">
+			<div class="main1_left">
+				<ul>
+					<li class="fir1">导航菜单</li>
+					<li class="insert_pic1 character">
+						<!--<img src="/images/menu_15.png"/>-->
+						商品管理
+						<ul style="display: none;">
+							<li><a href="/productlist1" target="content">商品列表</a></li>
+							<li><a href="/productlist2" target="content">添加新商品</a></li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic2 character">促销管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic3 character">订单管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic4 character">广告管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic5 character">报表统计
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic6 character">文章管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic7 character">会员管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic8 character">权限管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic9 character">数据库管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic10 character">短信管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic11 character">推荐管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic12 character">邮件群发管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic13 character">移动版管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic14 character">模板管理
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="insert_pic15 character">模板堂知识库
+						<ul style="display: none;">
+							<li>商品列表</li>
+							<li>添加新商品</li>
+							<li>商品分类</li>
+							<li>用户评论</li>
+							<li>商品品牌</li>
+							<li>商品类型</li>
+							<li>商品回收站</li>
+							<li>图片批量处理</li>
+							<li>商品批量上传</li>
+							<li>商品批量导出</li>
+							<li>商品批量修改</li>
+							<li>生成商品代码</li>
+							<li>标签管理</li>
+							<li>虚拟商品列表</li>
+							<li>添加虚拟商品</li>
+							<li>更改加密串</li>
+							<li>商品自动上下架</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="main1_right">
+				<iframe id="content" name="content" src="/productlist2" ></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="/javascripts/commodity.js"></script>
+</html>
+
+
+
+
+

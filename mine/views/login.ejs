@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body>
+	<!--<h1><%= ttt %></h1>
+	用户名:<input type="text" id="username"/><br>
+	密码:<input type="password" id="psw"/><br>
+	<button type="button" onclick="loginFunc()">登录</button>-->
+	
+	<!--背景图-->
+		<div class="bjt">
+			<img src="/images/ecshop-bg.png"/>
+		</div>
+		
+		<!--logo-->
+		<div class="logo">
+			<img src="/images/shopex.png"/>
+		</div>
+		
+		<!--Login window-->
+		<div class="loginwindow">
+			<div class="loginwindow_one">
+				<img src="/images/ecshop-logo.png"/>
+			</div>
+			<div class="loginwindow_two">
+				<div class="board">
+					<h1><%= ttt %></h1>
+					<div class="fir">
+						<i></i>
+						<input type="text" id="username" placeholder="用户名">
+					</div>
+					<div class="sec">
+						<i></i>
+						<input type="password" id="psw" placeholder="密码">
+					</div>
+					<div class="thr">
+						<i></i>
+						<input type="text" id="yzm" placeholder="验证码"><!--验证码效果-->
+						<img src="/images/index.png">
+					</div>
+					<div class="fou">
+						<a href="#" onclick="loginFunc()">登录</a>
+					</div>
+					<div class="fif">
+						<input type="checkbox">
+						<label for="remember">保存登录信息</label>
+						<a href="#">忘记密码</a>
+						<a href="#">去店铺首页>></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</body>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	/*function loginFunc(){
+  		$.ajax({
+  			url:"/api/login",
+  			type:"post",
+  			data:{
+  				username:$("#username").val(),
+  				psw:$("#psw").val(),
+  			},
+  			success:function(res){
+  				console.log(res);
+  				if(res.code==1){
+  					alert(res.message);
+  					location.href = "./index?r=" + new Date().getTime();
+  				}else{
+  					alert(res.message);
+  				}
+  			}
+  		})
+  	}*/
+  	function loginFunc(){
+		$.ajax({
+			url:"/api/login",
+			type:"GET",
+			data:{
+				username:$("#username").val(),
+				psw:$("#psw").val(),
+				yzm:$("#yzm").val()
+			},
+			success:function(res){
+				if(res==200){
+					location.href='/index';
+				}else{
+					if($("#username").val()=="" && $("#psw").val()=="" && $("#yzm").val()==""){
+						alert("-管理员用户名不能为空！-您没有输入验证码！");
+					}else{
+						if($("#yzm").val()==""){
+								alert("-您没有输入验证码！");
+						}
+					}
+				}
+			}
+		})
+	}
+</script>
+</html>

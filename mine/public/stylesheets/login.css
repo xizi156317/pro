@@ -1,0 +1,111 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	overflow:hidden;
+	height: 100%;
+}
+/*.bjt{
+	width: 100%;
+    height: 100%;
+    background:url(../img_login/ecshop-bg.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}*/
+a{
+	text-decoration: none;
+}
+.bjt img{
+	width:100%;
+	height:100%;
+}
+
+/*logo*/
+.logo{
+	position:absolute;
+	top: 180px;
+    left: 50px;
+}
+/*Login window*/
+.loginwindow .loginwindow_one img{
+	width: 248px;
+    height: 65px;
+    margin-left: 66px;
+    position: absolute;
+    top: 220px;
+    left: 519px;
+} 
+.loginwindow .loginwindow_two .board{
+	position: relative;
+    overflow: hidden;
+    --padding-bottom: 42px;
+    height: 350px;
+    background:#ddd url(../images/icloud-bar.png) no-repeat 0 bottom;
+    --margin-top: 50px;
+    top: -536px;
+    left: 476px;
+    width: 458px;
+    height: 392px;
+}
+.loginwindow .loginwindow_two .board .fir{
+	margin-top:60px;
+	margin-left: 106px;
+	border:1px solid #ddd;
+}
+.loginwindow .loginwindow_two .board .sec{
+	margin-left: 106px;
+	border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.loginwindow .loginwindow_two .board .thr{
+	margin-left: 106px;
+	border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.loginwindow .loginwindow_two .board .thr img{
+	position:absolute;
+	right: 116px;
+    top: 148px;
+    cursor: pointer;
+    height: 30px;
+}
+.loginwindow .loginwindow_two .board .fou a{
+	display:block;
+	width:260px;
+	height:52px;
+	background:#fc7878;
+	margin-top: 20px;
+    margin-left: 108px;
+    border-radius: 5px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFF;
+}
+.loginwindow .loginwindow_two .board .fif{
+	margin-left: 108px;
+    margin-top: 10px;
+}
+.loginwindow .loginwindow_two .board .fif input{
+	width:15px;
+	height:15px;
+	margin: 2px 2px 0 0;
+}
+.loginwindow .loginwindow_two .board .fif label{
+	font-size:12px;
+	color:#666;
+}
+.loginwindow .loginwindow_two .board .fif a{
+	color:#41A5E1;
+	font-size:12px;
+	margin-left: 18px;
+}
+.loginwindow .loginwindow_two .board input{
+	width: 260px;
+    height: 40px;
+    border-radius:5px;
+    border:none;
+    line-height: 40px;
+    text-indent: 50px;
+}
